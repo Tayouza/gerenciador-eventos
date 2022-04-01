@@ -18,22 +18,22 @@
 <body class="antialiased">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar" id="navbar">
                 <a href="/" class="navbar-brand">
                     <img src="/img/tayouzaenvents_logo.png" alt="Tayouza Events">
                 </a>
-                <ul class="navbar-nav">
+                <ul class="nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Eventos</a>
+                        <a href="/" class="nav-link link-dark">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/events/create" class="nav-link">Criar Eventos</a>
+                        <a href="/events/create" class="nav-link link-dark">Criar Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Entrar</a>
+                        <a href="/" class="nav-link link-dark">Entrar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Cadastrar</a>
+                        <a href="/" class="nav-link link-dark">Cadastrar</a>
                     </li>
                 </ul>
             </div>
