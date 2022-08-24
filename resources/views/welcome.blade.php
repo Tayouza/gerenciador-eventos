@@ -5,7 +5,7 @@
 <div id="search-container" class="col-md-12">
     <h2>Busque um evento</h2>
     <form action="">
-        <input type="text" name="search" id="search" class="form-control" placeholder="Prourar...">
+        <input type="text" name="search" id="search" class="form-control" placeholder="Procurar..." autocomplete="off">
     </form>
 </div>
 <div id="events-container" class="col-md-12">
@@ -23,7 +23,7 @@
                 <div class="card-date">01/04/202</div>
                 <h5 class="card-title">{{ $event->title }}</h5>
                 <p class="card-participants">X participantes</p>
-                <a href="#" class="btn btn-primary">Saber mais</a>
+                <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
             </div>
         </div>
         @endforeach

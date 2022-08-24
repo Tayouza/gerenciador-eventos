@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-.msg{
+.msg {
     background-color: #D4EDDA;
     color: #155724;
     border: 1px solid #C3E6CB;
@@ -42,6 +42,18 @@ header {
 .btn-primary:hover {
     background-color: #C28008;
     border-color: #C28008;
+}
+
+.btn-primary:active:focus {
+    background-color: #C28008;
+    border-color: #C28008;
+    box-shadow: 0 0 0 .25rem #F2A340;
+}
+
+.btn-primary:focus {
+    background-color: #C28008;
+    border-color: #C28008;
+    box-shadow: 0 0 0 .25rem #F2A340;
 }
 
 /* NAVBAR */
@@ -76,7 +88,7 @@ header {
     text-align: center;
 }
 
-#search-container h2{
+#search-container h2 {
     color: #F2A340;
     margin-bottom: 30px;
     font-weight: 900;
@@ -84,81 +96,116 @@ header {
     font-size: 34px;
 }
 
-#search-container form{
+#search-container form {
     width: 50%;
     margin: 0 auto;
 }
 
+#search-container #search {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
 /* EVENTS LIST */
 
-#events-container{
+#events-container {
     padding: 50px;
 }
 
-#events-container h2{
+#events-container h2 {
     margin-bottom: 10px;
 }
 
-#events-container .subtitle{
+#events-container .subtitle {
     color: #757575;
     margin-bottom: 30px;
 }
 
-#cards-container{
+#cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-#events-container .card{
+#events-container .card {
     width: 300px;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
+    transition: .4s;
 }
 
-.card img{
+#events-container .card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px #0005;
+    z-index: 1000;
+}
+
+.card img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    max-height: 150px;
+    object-fit: cover;
 }
 
-.card .card-date{
+.card .card-date {
     font-size: 12px;
     color: #ccc;
 }
 
-.card .card-title{
+.card .card-title {
     color: #212121;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-.card .card-participants{
+.card .card-participants {
     font-size: 14px;
     color: #757575;
 }
 
 /* EVENT CREATE PAGE */
 
-#event-create-container{
+#event-create-container {
     padding: 30px;
 }
 
-#event-create-container label{
+#event-create-container label {
     font-weight: bold;
 }
 
 #event-create-container input,
 #event-create-container select,
-#event-create-container textarea{
+#event-create-container textarea {
     font-size: 12px;
     margin: 5px 0;
 }
 
+/* SHOW EVENT */
+
+#info-container p {
+    display: flex;
+    align-items: center;
+}
+
+#info-container p ion-icon{
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+#info-container ion-icon[name="location"]{
+    color: red;
+}
+
+#info-container ion-icon[name="star"]{
+    color: yellow;
+}
+
 /* FOOTER */
 
-footer{
+footer {
     text-align: center;
     background-color: #353E48;
     color: white;
@@ -168,6 +215,6 @@ footer{
     bottom: 0;
 }
 
-footer p{
+footer p {
     margin-bottom: 0;
 }
