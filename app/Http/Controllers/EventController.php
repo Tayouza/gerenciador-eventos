@@ -24,6 +24,7 @@ class EventController extends Controller
         $event->title = $request->title;
         $event->city = $request->city;
         $event->private = $request->private;
+        $event->date = $request->date;
         $event->description = $request->description;
 
         // image upload
@@ -51,5 +52,13 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         return view('events.show', ['event' => $event]);
+    }
+
+    public function search (Request $request) {
+        $search = $request->search;
+        $events = Event::where('title', 'like', "%$search%")->get();
+        return view('welcome', [
+            'events' => $events
+        ]);
     }
 }

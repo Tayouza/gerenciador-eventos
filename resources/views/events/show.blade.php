@@ -17,7 +17,7 @@
             </p>
             <p class="events-participants">
                 <ion-icon name="people" class="me-2"></ion-icon>
-                X participantes
+                {{ rand(25, 250) }} participantes
             </p>
             <p class="event-owner">
                 <ion-icon name="star" class="me-2"></ion-icon>

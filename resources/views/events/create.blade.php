@@ -21,6 +21,10 @@
             <input type="text" name="city" id="city" class="form-control" placeholder="Local do evento">
         </div>
         <div class="form-group">
+            <label for="date">Data:</label>
+            <input type="date" name="date" id="date" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="private">O evento é privado?</label>
             <select name="private" id="private" class="form-control">
                 <option value="0">Não</option>
