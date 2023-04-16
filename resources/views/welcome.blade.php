@@ -17,15 +17,19 @@
         @foreach($events as $event)
         <div class="card col-md-3">
             @if(!empty($event->image))
+            <a href="/events/{{ $event->id }}">
                 <img src="/img/events/{{$event->image}}" alt="{{ $event->title }}">
+            </a>
             @else
                 <img src="/img/placeholder-image.png" alt="{{ $event->title }}">
             @endif
             <div class="card-body">
                 <div class="card-date">{{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}</div>
                 <h5 class="card-title">{{ $event->title }}</h5>
-                <p class="card-participants">{{ rand(25, 250) }} participantes</p>
-                <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
+                <div class="foot-card">
+                    <p class="card-participants">{{ rand(25, 250) }} participantes</p>
+                    <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
+                </div>
             </div>
         </div>
         @endforeach

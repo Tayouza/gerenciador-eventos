@@ -148,9 +148,15 @@ main {
     z-index: 1000;
 }
 
-.card img {
+.card>a {
+    display: flex;
+    width: 100%;
+}
+
+.card>a img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    width: 100%;
     max-height: 150px;
     object-fit: cover;
 }
@@ -170,6 +176,13 @@ main {
 .card .card-participants {
     font-size: 14px;
     color: #757575;
+}
+
+.card .foot-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* EVENT CREATE PAGE */
